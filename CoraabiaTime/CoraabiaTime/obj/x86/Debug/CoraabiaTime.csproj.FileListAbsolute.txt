@@ -1,9 +1,9 @@
 D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\bin\Debug\CoraabiaTime.exe
 D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\bin\Debug\CoraabiaTime.pdb
 D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\obj\x86\Debug\CoraabiaTime.MainWindow.resources
 D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\obj\x86\Debug\CoraabiaTime.Properties.Resources.resources
 D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\obj\x86\Debug\CoraabiaTime.exe
 D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\obj\x86\Debug\CoraabiaTime.pdb
-D:\Dropbox\skola\c-kanalek\CoraabiaTime\CoraabiaTime\obj\x86\Debug\CoraabiaTime.CoraabiaTime.resources

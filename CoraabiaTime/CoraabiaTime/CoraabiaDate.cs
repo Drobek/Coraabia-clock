@@ -17,8 +17,6 @@ namespace CoraabiaTime
         //Dohromady odpovídají jednomu pozemskému týdnu
         private DateTime actTime = new DateTime(); // now pokud neni nastaveno jinak
         private static DateTime startTime = new DateTime(2011, 10, 11, 0, 0, 0); // 11.10.2011 00:00
-        
-        public string message = "";
 
         public void setTime()
         {
@@ -29,16 +27,59 @@ namespace CoraabiaTime
             setGul();
         }
 
-        public void setDate(DateTime dt) {
+        public void setDate(DateTime dt)
+        {
             actTime = dt;
             setTime();
         }
 
-        private TimeSpan elapsedTime() {
+        public String fullString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Hour.ToString());
+            sb.Append(" hour of ");
+            sb.Append(Era.ToString());
+            if (DayType == DayTypeLight)
+            {
+                sb.Append(" Light day ");
+            }
+            else
+            {
+                sb.Append(" Haze day ");
+            }
+            sb.Append(" Year ");
+            sb.Append(Year.ToString());
+            sb.Append(" (");
+            sb.Append(Gul.ToString());
+            sb.Append(" Gul)");
+            return sb.ToString();
+        }
+
+        public override String ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Hour.ToString());
+            if (DayType == DayTypeLight)
+            {
+                sb.Append(" L ");
+            }
+            else
+            {
+                sb.Append(" H ");
+            }
+            sb.Append(Era.ToString());
+            sb.Append(" ");
+            sb.Append(Year.ToString());
+            return sb.ToString();
+        }
+
+        private TimeSpan elapsedTime()
+        {
             return actTime - startTime;
         }
 
-        private void setHour() {
+        private void setHour()
+        {
             DayOfWeek actDay = actTime.DayOfWeek;
             switch (actDay)
             {
@@ -63,7 +104,8 @@ namespace CoraabiaTime
             }
         }
 
-        private void setDayType() {
+        private void setDayType()
+        {
             DayOfWeek actDay = actTime.DayOfWeek;
             switch (actDay)
             {
@@ -84,24 +126,24 @@ namespace CoraabiaTime
             }
         }
 
-        private void setEra() {
+        private void setEra()
+        {
             TimeSpan ts = elapsedTime();
             Era = ((ts.Days / 7) % 8) + 1;
         }
 
-          private void setYear()
+        private void setYear()
         {
             StringBuilder sb = new StringBuilder();
             TimeSpan ts = elapsedTime();
-              sb.Append("Days: ");
-              sb.Append(ts.Days);
-              message = sb.ToString();
+            sb.Append("Days: ");
+            sb.Append(ts.Days);
             Year = (ts.Days / (7 * 8)) + 4260;
         }
 
-          private void setGul()
-          {
-              Gul = Year / 6;
-          }
+        private void setGul()
+        {
+            Gul = Year / 6;
+        }
     }
 }

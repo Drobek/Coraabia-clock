@@ -15,7 +15,7 @@ namespace CoraabiaTime
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CoraabiaTime());
+            Application.Run(new MainWindow());
         }
     }
 }
