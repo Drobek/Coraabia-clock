@@ -32,6 +32,8 @@
             this.coraabLongLbl = new System.Windows.Forms.Label();
             this.coraabianShortLbl = new System.Windows.Forms.Label();
             this.actualizeBtn = new System.Windows.Forms.Button();
+            this.humanDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.test = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // humanTimeLbl
@@ -63,7 +65,7 @@
             // 
             // actualizeBtn
             // 
-            this.actualizeBtn.Location = new System.Drawing.Point(15, 85);
+            this.actualizeBtn.Location = new System.Drawing.Point(12, 85);
             this.actualizeBtn.Name = "actualizeBtn";
             this.actualizeBtn.Size = new System.Drawing.Size(75, 23);
             this.actualizeBtn.TabIndex = 3;
@@ -71,11 +73,30 @@
             this.actualizeBtn.UseVisualStyleBackColor = true;
             this.actualizeBtn.Click += new System.EventHandler(this.actualizeBtn_Click);
             // 
+            // humanDatePicker
+            // 
+            this.humanDatePicker.Location = new System.Drawing.Point(273, 9);
+            this.humanDatePicker.Name = "humanDatePicker";
+            this.humanDatePicker.Size = new System.Drawing.Size(200, 20);
+            this.humanDatePicker.TabIndex = 4;
+            this.humanDatePicker.ValueChanged += new System.EventHandler(this.humanDatePicker_ValueChanged);
+            // 
+            // test
+            // 
+            this.test.AutoSize = true;
+            this.test.Location = new System.Drawing.Point(270, 60);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(24, 13);
+            this.test.TabIndex = 5;
+            this.test.Text = "test";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 168);
+            this.ClientSize = new System.Drawing.Size(562, 330);
+            this.Controls.Add(this.test);
+            this.Controls.Add(this.humanDatePicker);
             this.Controls.Add(this.actualizeBtn);
             this.Controls.Add(this.coraabianShortLbl);
             this.Controls.Add(this.coraabLongLbl);
@@ -93,6 +114,8 @@
         private System.Windows.Forms.Label coraabLongLbl;
         private System.Windows.Forms.Label coraabianShortLbl;
         private System.Windows.Forms.Button actualizeBtn;
+        private System.Windows.Forms.DateTimePicker humanDatePicker;
+        private System.Windows.Forms.Label test;
     }
 }
 

@@ -10,15 +10,16 @@ namespace CoraabiaTime
         public static int DayTypeLight = 1;
         public static int DayTypeHaze = 2;
         public int Gul = 710;
-        public int Year = 4260;
+        public int Year = 4261;
         public int Era = 1;
         public int DayType = DayTypeLight; //podle dne v týdnu buď den šera (H=Haze) nebo den světla (L=Light)
         public int Hour = 0; //coraabské hodiny. Den světla (L) má 96 hodin, den šera 72 hodin. 
         //Dohromady odpovídají jednomu pozemskému týdnu
         private DateTime actTime = new DateTime(); // now pokud neni nastaveno jinak
-        private static DateTime startTime = new DateTime(2011, 10, 11, 0, 0, 0); // 11.10.2011 00:00
+        private static DateTime startTime = new DateTime(2011, 12, 5, 0, 0, 0); // 11.10.2011 00:00
+        public String message = "";
 
-        public void setTime()
+        public void setCoraabTime()
         {
             setHour();
             setDayType();
@@ -30,7 +31,7 @@ namespace CoraabiaTime
         public void setDate(DateTime dt)
         {
             actTime = dt;
-            setTime();
+            setCoraabTime();
         }
 
         public String fullString()
@@ -129,16 +130,23 @@ namespace CoraabiaTime
         private void setEra()
         {
             TimeSpan ts = elapsedTime();
+            /*StringBuilder sb = new StringBuilder();
+            sb.Append("elapsed Time:");
+            sb.Append(ts.ToString());
+            sb.Append("\n(ts.Days: ");
+            sb.Append(ts.Days.ToString());
+            sb.Append("\n(ts.Days / 7: ");
+            sb.Append((ts.Days / 7).ToString());*/
             Era = ((ts.Days / 7) % 8) + 1;
+            /*sb.Append("\nEra: ");
+            sb.Append(Era.ToString());
+            message = sb.ToString();*/
         }
 
         private void setYear()
         {
-            StringBuilder sb = new StringBuilder();
             TimeSpan ts = elapsedTime();
-            sb.Append("Days: ");
-            sb.Append(ts.Days);
-            Year = (ts.Days / (7 * 8)) + 4260;
+            Year = (ts.Days / (7 * 8)) + 4261;
         }
 
         private void setGul()
