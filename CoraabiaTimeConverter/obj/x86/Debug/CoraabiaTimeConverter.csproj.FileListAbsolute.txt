@@ -1,0 +1,9 @@
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\obj\x86\Debug\CoraabiaTimeConverter.Form1.resources
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\obj\x86\Debug\CoraabiaTimeConverter.Properties.Resources.resources
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\bin\Debug\CoraabiaTimeConverter.exe
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\bin\Debug\CoraabiaTimeConverter.pdb
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\obj\x86\Debug\CoraabiaTimeConverter.exe
+D:\Dropbox\visual-studio-projects\CoraabiaTimeConverter\CoraabiaTimeConverter\obj\x86\Debug\CoraabiaTimeConverter.pdb
